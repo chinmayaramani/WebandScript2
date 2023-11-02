@@ -1,0 +1,238 @@
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  #Header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    color: #090909;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Adjust the z-index to control the stacking order */
+  }
+
+  /* Home Section styles */
+  #Home {
+    text-align: center;
+    padding: 288px 0;     
+    background-size: cover; /* Adjusts the size as needed */
+    background-position: center; /* Adjusts the position as needed */
+    background-repeat: no-repeat;
+    background-image: url('Assets/images/pexels-pixabay-355770.jpg');
+  }
+  
+  #Home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+ /* About Me Section styles */
+#AboutMe {
+    background: linear-gradient(45deg, #6063f7, #ff6b6b); /* Adjusts the angle and colors as needed */
+    padding: 100px 0;
+    text-align: center;
+    color: #0e0909; 
+}
+
+.column {
+    flex: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content within the column */
+}
+
+
+.About-Me-Image img {
+    max-width: 100%; /* Makes the image responsive by using % */
+    height: auto;
+    border-radius: 50%; /* Adds a border-radius for a circular image */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to the image */
+}
+
+.section-title {
+    font-size: 28px;
+    color: #160650;
+    margin-bottom: 20px; /* Adds some spacing below the section title */
+}
+
+.video-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Sets the background color */
+    color: #f2f2f2c9; /* Sets the text color */
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adds a smooth hover effect */
+}
+
+.video-button:hover {
+    background-color: #020480; /* Changes the background color on hover */
+}
+
+  
+  /* Projects Section styles */
+  #Projects {
+    background: linear-gradient(45deg, #ff6b6b, #6063f7); /* Adjusts the angle and colors as needed */
+    padding: 100px 0;
+    text-align: center;
+    color: #0e0909; /* Sets text color to any suitable color for contrast */
+}
+
+.projects.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectItem {
+    background-color: #d5d3d3;
+    border: 1px solid #fffefe;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.projectItem:hover {
+    transform: scale(1.05); /* Increases size on hover for a nice effect */
+}
+
+.projectInfo h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #040330; /* Changes text color */
+}
+
+.projectInfo h2 {
+    font-size: 18px;
+    color: #050505; /* Changes subtitle color */
+    margin-bottom: 10px;
+}
+
+.projectInfo p {
+    font-size: 16px;
+    color: #555; /* Changes text color */
+}
+
+/* Center-align the section title */
+.section.title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+  /* Contact Section styles */
+  #ContactMe {
+    background-color: #ffffff; /* Sets the background color as needed */
+    padding: 100px 0;
+    border: 1px solid #7c7c7c; /* Adds a border around the contact form */
+    border-radius: 5px; /* Adds rounded corners for a box effect */
+    margin: 20px 0; /* Adds margin for spacing */
+}
+
+
+.sectionTitle {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.phpEmailForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.phpEmailForm p {
+    font-weight: bold;
+}
+
+.phpEmailForm input,
+.phpEmailForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #656565;
+    border-radius: 5px;
+}
+
+.phpEmailForm .button {
+    text-align: center;
+}
+
+.phpEmailForm button {
+    background-color: #323131;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.phpEmailForm button:hover {
+    background-color: #ff6600;
+}
+  
+  /* Footer styles */
+  #footer {
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  #footer p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .navigationBar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navigationList ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navigationList li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .column {
+      flex: none;
+    }
+  }
+  

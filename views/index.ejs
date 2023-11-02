@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <!--CSS files-->
+  <link rel='stylesheet' href='/Content/style.css'/>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+  <!--background image-->
+  <style>
+  #Home {
+    background-image: url('Assets/images/pexels-pixabay-355770.jpg');
+  }
+  </style>
+</head>
+<body>
+<!--NavBar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id = "navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Chinmaya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <% if (title == "Home") { %>
+          <a class="nav-link active" href="#Home">
+          <% } else { %>
+          <a class="nav-link" href="#Home">
+          <% } %>
+          <i class="fa-solid fa-house"></i> Home</a>
+        </li> 
+        <li class="nav-item">
+        <% if (title == "About Me") { %>
+          <a class="nav-link active" href="#AboutMe">
+          <% } else { %>
+          <a class="nav-link" href="#AboutMe">
+          <% } %>
+          <i class="fa-solid fa-circle-info"></i> About Me</a>
+        </li>        
+        <li class="nav-item">
+        <% if (title == "Products") { %>
+          <a class="nav-link active" href="#Projects">
+          <% } else { %>
+          <a class="nav-link" href="#Projects">
+          <% } %>
+          <i class="fa-brands fa-elementor"></i> Projects</a>
+        </li>
+        <li class="nav-item">
+        <% if (title == "Contact Me") { %>
+          <a class="nav-link active" href="#ContactMe">
+          <% } else { %>
+          <a class="nav-link" href="#ContactMe">
+          <% } %>
+          <i class="fa-solid fa-phone"></i> Contact Me</a>
+        </li>              
+    </div>
+  </div>
+</nav>
+<!-- Home Section -->
+        <section id="Home">
+            <div class="home container">
+                <div>
+                    <!-- Home Page Greeting -->
+                    <h1>Hi Everyone, </h1>
+                    <h1>I am Chinmaya Ramani</h1>                    
+                </div>
+            </div>
+        </section>
+<!--Main Content-->
+<!-- About Me Section -->
+        <section id="AboutMe">
+            <div class="about container">
+                <div class="column">
+                    <div class="About-Me-Image">
+                        <!-- About Me Image -->
+                        <img src="Assets/images/IMG_7006.jpg" alt="Chinmaya's image" width="200" height="150">                        
+                    </div>                    
+                
+                    <!-- Section Title -->
+                    <h1 class="section-title">About Me</h1>
+                    <article>
+                        <h2>Pursuing Technology Management</h2>
+                        <!-- About Me Content -->
+                        <p>I'm currently a second-year student at Ontario Tech University, where I'm enthusiastically pursuing a degree in Tech Management (IT). What truly fuels my passion is the world of technology and my insatiable thirst for knowledge. I absolutely love diving into programming and finding ways to make things work better.
+
+                            One course that's really caught my attention is Web and Script Programming. It's incredible how you can use code to create dynamic websites and automate tasks. Beyond the classroom, I'm always on the lookout for opportunities to put my programming skills to the test, whether it's working on personal projects or contributing to open-source projects.
+                            
+                            I'm genuinely excited about the endless possibilities that the tech industry offers and I can't wait to make my mark in this field. It's a journey I'm fully committed to, and I'm eager to see where it takes me!
+                        </p>
+                    </article>
+                    <!-- Video Link -->
+                    <a href="Assets/images/ChinmayaWebAssignment.mp4" class="video-button" target="_blank">My Video</a>
+                </div>               
+            </div>
+        </section>
+        <!-- End About Me Section -->
+
+        <!-- Projects Section -->
+        <section id="Projects">
+            <div class="projects container">
+                <div class="projects header">
+                    <!-- Projects Section Title -->
+                    <h1 class="section title">My Projects</h1>
+                </div>
+                <div class="allProjects">
+                    <div class="projectItem">
+                        <div class="projectInfo">
+                            <!-- Project 1 Details -->
+                            <h1>Project 1</h1>
+                            <h2>Creating a game for Jumbled Words</h2>
+                            <p>In my course Intro to Programming, our team had to create a game of jumbled words which can be played among 2 players with the help of Python.</p>
+                        </div>
+                    </div>
+                    <div class="projectItem">
+                        <div class="projectInfo">
+                            <!-- Project 2 Details -->
+                            <h1>Project 2</h1>
+                            <h2>Implementing different Ciphers using OOP</h2>
+                            <p>In my course Object Oriented Programming, our team had to create a Python code in which several ciphers like substitution, playfair, ceaser, transposition, product, and RSA were used.</p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Projects Section -->
+
+        <!-- Contact Section -->
+        <section id="ContactMe">
+            <div class="Contact container">
+                <!-- Contact Section Title -->
+                <h1 class="sectionTitle">Contact Info</h1>
+            </div>
+            <div class="contactItems">
+                <div class="contactItem">
+                    <div class="contactInfo">
+                        <form
+                            action="#"
+                            class="phpEmailForm"
+                            method="post">
+                        <p>Your Name</p>
+                        <!-- Name Input Field -->
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Please type your name here"
+                            required>
+                        <p>Your Email</p>
+                        <!-- Email Input Field -->
+                        <input  
+                            type="email"
+                            name="email"
+                            placeholder="Please type your email here"
+                            required>
+                        <p>Your Number</p>
+                        <!-- Phone Number Input Field -->
+                        <input
+                            type="tel"
+                            name="tel"
+                            maxlength="10"
+                            minlength="10"
+                            placeholder="Enter 10-digit number"
+                            required>
+                        <p>Message</p>
+                        <!-- Message Textarea -->
+                        <textarea   
+                            style="height: 150px"                            
+                            name="message"                            
+                            required>
+                        </textarea>
+                        <div class="button">
+                            <!-- Submit Button -->
+                            <button class="button" type="submit">Submit</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="footer container">
+                <div class="logo">
+                    <!-- Footer Content -->
+                    <h1>Thanks for visiting my website</h1>
+                    <p>You can reach me at chinmayashivalingappa.ramani@ontariotechu.net</p>
+                    <!-- Copyright Notice -->
+                    <p>&copy; 2023 Chinmaya. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+  <!--Script files-->
+  <script src = "/Scripts/app.js"></script>
+  <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src = "/jquery/dist/jquery.min.js"></script>
+</body>
+</html>
